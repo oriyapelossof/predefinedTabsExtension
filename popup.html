@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Category Tabs</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <h1>Manage Category Tabs</h1>
+    
+    <!-- Dropdown for selecting a category -->
+    <div class="form-group">
+      <label for="categoryDropdown">Select Category:</label>
+      <select id="categoryDropdown" class="dropdown">
+        <!-- Categories will be dynamically populated here -->
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <button id="addCategoryButton">Add Category</button>
+      <button id="deleteCategoryButton" class="delete-btn">Delete Category</button>
+    </div>
+    
+    <!-- Section for listing and managing websites -->
+    <div id="websiteList" class="website-list"></div>
+    
+    <div class="form-group">
+      <button id="saveButton" class="primary-btn">Save Changes</button>
+      <button id="openTabsButton" class="primary-btn">Open Tabs</button>
+      <button id="addWebsiteButton" class="secondary-btn">Add New Website</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
